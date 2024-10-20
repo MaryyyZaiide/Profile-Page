@@ -21,7 +21,7 @@ function About() {
         <Col xs="auto">
           <Image 
             src={Aboutpic1} 
-            style={{ width: '300px', height: '300px', objectFit: 'cover' }} 
+            style={{ width: '150px', height: '150px', objectFit: 'cover' }} // Medium square size
             className="img-fluid" 
             rounded 
           />
@@ -29,7 +29,7 @@ function About() {
         <Col xs="auto">
           <Image 
             src={Aboutpic2} 
-            style={{ width: '300px', height: '300px', objectFit: 'cover' }} 
+            style={{ width: '150px', height: '150px', objectFit: 'cover' }} // Medium square size
             className="img-fluid" 
             rounded 
           />
@@ -37,7 +37,7 @@ function About() {
         <Col xs="auto">
           <Image 
             src={Aboutpic3} 
-            style={{ width: '300px', height: '300px', objectFit: 'cover' }} 
+            style={{ width: '150px', height: '150px', objectFit: 'cover' }} // Medium square size
             className="img-fluid" 
             rounded 
           />

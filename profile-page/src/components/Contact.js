@@ -13,11 +13,10 @@ function Contact() {
 
   return (
     <div className="container">
-      <h2 className="text-center">Contact Me</h2>
-      {submitted ? (
-        // Conditionally render the thank you message after form submission
-        <div className="text-center mt-4">
-          <h4 className="text-success">Thank you, {name}! Your message has been sent.</h4>
+      <h2>Contact Me:</h2>
+      {submitted ? ( // Conditionally render the thank you message after form submission
+        <div>
+          <h4>Thank you {name}! Your message has been sent.</h4>
         </div>
       ) : (
         <form onSubmit={handleSubmit}>
@@ -54,11 +53,7 @@ function Contact() {
               required
             ></textarea>
           </div>
-
-          {/* Centering the submit button */}
-          <div className="text-center">
-            <button type="submit" className="btn btn-primary mt-2">Submit</button>
-          </div>
+          <button type="submit" className="btn btn-primary mt-2">Submit</button>
         </form>
       )}
     </div>
