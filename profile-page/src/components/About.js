@@ -1,33 +1,47 @@
 import React from 'react';
-import {Container, Image, Row } from "react-bootstrap";
+import { Container, Image, Row, Col } from 'react-bootstrap';
 import Aboutpic1 from './Aboutpic1.jpg';
 import Aboutpic2 from './Aboutpic2.jpg';
 import Aboutpic3 from './Aboutpic3.jpg';
 
 function About() {
   return (
-    <Container className="mt-4">
-      <Row>
-      <Image 
-                src={Aboutpic1} 
-                style={{ width: '300px', height: 'auto' }} // Adjust the width as needed
-                className="img-fluid" 
-                rounded 
-              />
-        
-        <Image 
-                src={Aboutpic2} 
-                style={{ width: '300px', height: 'auto' }} // Adjust the width as needed
-                className="img-fluid" 
-                rounded 
-              />
+    <Container className="mt-4 text-center">
+      {/* Center the text */}
+      <div className="mb-4">
+        <h1>Welcome to My Profile!</h1>
+        <p>
+          I am Mary! <br />
+          I love singing, watching series, traveling, and exploring new things.
+        </p>
+      </div>
 
-        <Image 
-                src={Aboutpic3} 
-                style={{ width: '300px', height: 'auto' }} // Adjust the width as needed
-                className="img-fluid" 
-                rounded 
-              />
+      {/* Center the images */}
+      <Row className="justify-content-center">
+        <Col xs="auto">
+          <Image 
+            src={Aboutpic1} 
+            style={{ width: '300px', height: '300px', objectFit: 'cover' }} 
+            className="img-fluid" 
+            rounded 
+          />
+        </Col>
+        <Col xs="auto">
+          <Image 
+            src={Aboutpic2} 
+            style={{ width: '300px', height: '300px', objectFit: 'cover' }} 
+            className="img-fluid" 
+            rounded 
+          />
+        </Col>
+        <Col xs="auto">
+          <Image 
+            src={Aboutpic3} 
+            style={{ width: '300px', height: '300px', objectFit: 'cover' }} 
+            className="img-fluid" 
+            rounded 
+          />
+        </Col>
       </Row>
     </Container>
   );
